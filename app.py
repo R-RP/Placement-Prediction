@@ -51,9 +51,9 @@ def predict():
     #return render_template('index.html', prediction_text='  {}%'.format(output))
     
     if output == 0:
-    	return render_template('index.html', prediction_text= 'Based on past placement data this candidate WILL NOT BE HIRED.',model_acc='Model accuracy: 89%')
+    	return render_template('index.html', prediction_text= 'Based on past placement data this candidate WILL NOT be hired.',model_acc='(Note: Model accuracy - 89%)')
     else:
-    	return render_template('index.html', prediction_text= 'Based on past placement data this candidate WILL BE HIRED.',model_acc='Model accuracy: 89%')
+    	return render_template('index.html', prediction_text= 'Based on past placement data this candidate WILL be hired.',model_acc='(Note: Model accuracy - 89%)')
     
 if __name__ == "__main__":
     app.run(debug=True)
