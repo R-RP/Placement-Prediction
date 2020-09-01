@@ -23,7 +23,7 @@ def predict():
 
     #scaled_features= []       
     final_features = []
-    features = [int(x) for x in request.form.values()]
+    features = [float(x) for x in request.form.values()]
     '''
     for x in features:
     	if x == 'a':
